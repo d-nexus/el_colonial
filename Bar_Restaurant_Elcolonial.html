@@ -1,0 +1,2541 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bar Restaurante El Colonial · Gran Apertura en Cárdenas, Matanzas</title>
+<meta name="description" content="Bar Restaurante El Colonial — Gran apertura en Cárdenas, Matanzas. Cocina cubana de raíz, ron añejo y son en vivo en una casona colonial restaurada. Reserva para la apertura.">
+<meta name="theme-color" content="#0b2429">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍹</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,500&family=Outfit:wght@200;300;400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+/* ============================================================
+   BASE
+============================================================ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+:root{
+  --crema:#FBF5E9;
+  --crema-2:#F3E7D2;
+  --crema-3:#EADCC1;
+  --tinta:#20150E;
+  --madera:#3A2418;
+  --terracota:#C4552B;
+  --terracota-osc:#9B3D1B;
+  --teal:#0E5A61;
+  --teal-osc:#0A3F45;
+  --teal-claro:#17848F;
+  --oro:#C99A3F;
+  --oro-claro:#E9CC85;
+  --verde:#3E6B4A;
+
+  --fuente-display:'Playfair Display',Georgia,serif;
+  --fuente-texto:'Outfit',system-ui,-apple-system,sans-serif;
+  --fuente-script:'Great Vibes',cursive;
+
+  --sombra-suave:0 10px 30px -12px rgba(32,21,14,.28);
+  --sombra-fuerte:0 30px 60px -22px rgba(32,21,14,.55);
+  --radio:16px;
+  --nav-h:76px;
+}
+
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+
+body{
+  font-family:var(--fuente-texto);
+  background:var(--crema);
+  color:var(--tinta);
+  line-height:1.7;
+  font-weight:300;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button,input,select,textarea{font:inherit;color:inherit}
+ul{list-style:none}
+
+::selection{background:var(--terracota);color:#fff}
+
+::-webkit-scrollbar{width:11px}
+::-webkit-scrollbar-track{background:var(--crema-2)}
+::-webkit-scrollbar-thumb{background:var(--terracota);border-radius:20px;border:3px solid var(--crema-2)}
+::-webkit-scrollbar-thumb:hover{background:var(--terracota-osc)}
+
+/* ============================================================
+   UTILIDADES
+============================================================ */
+.contenedor{width:min(1200px,92%);margin-inline:auto}
+.contenedor-estrecho{width:min(860px,92%);margin-inline:auto}
+
+.script{
+  font-family:var(--fuente-script);
+  font-size:clamp(1.7rem,3.6vw,2.5rem);
+  color:var(--terracota);
+  line-height:1;
+  display:block;
+  margin-bottom:.35rem;
+}
+.script.claro{color:var(--oro-claro)}
+
+.titulo{
+  font-family:var(--fuente-display);
+  font-weight:700;
+  font-size:clamp(1.9rem,4.6vw,3.1rem);
+  line-height:1.14;
+  letter-spacing:-.015em;
+}
+.titulo em{font-style:italic;color:var(--terracota)}
+.titulo.claro{color:var(--crema)}
+.titulo.claro em{color:var(--oro-claro)}
+
+.parrafo{color:#5c4a3d;font-size:1.02rem;max-width:60ch}
+.parrafo.claro{color:rgba(251,245,233,.74)}
+
+.etiqueta{
+  display:inline-flex;align-items:center;gap:.6rem;
+  font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;
+  font-weight:500;color:var(--teal);
+}
+.etiqueta::before,.etiqueta::after{
+  content:'';width:28px;height:1px;background:currentColor;opacity:.5;
+}
+.etiqueta.claro{color:var(--oro-claro)}
+
+.divisor{
+  display:flex;align-items:center;justify-content:center;gap:.9rem;
+  margin:1.2rem 0 0;
+}
+.divisor span{height:1px;width:clamp(40px,10vw,90px);background:linear-gradient(90deg,transparent,var(--oro));}
+.divisor span:last-child{background:linear-gradient(90deg,var(--oro),transparent)}
+.divisor svg{width:22px;height:22px;color:var(--oro);flex-shrink:0}
+
+.btn{
+  --bg:var(--terracota);
+  display:inline-flex;align-items:center;justify-content:center;gap:.6rem;
+  padding:.95rem 2rem;
+  background:var(--bg);color:#fff;
+  border:none;border-radius:999px;cursor:pointer;
+  font-size:.82rem;font-weight:500;letter-spacing:.14em;text-transform:uppercase;
+  position:relative;overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .35s;
+  box-shadow:0 12px 26px -12px rgba(196,85,43,.75);
+}
+.btn::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(120deg,transparent 30%,rgba(255,255,255,.32),transparent 70%);
+  transform:translateX(-120%);transition:transform .7s;
+}
+.btn:hover::after{transform:translateX(120%)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 20px 34px -14px rgba(196,85,43,.85)}
+.btn:active{transform:translateY(-1px)}
+
+.btn-oro{--bg:var(--oro);box-shadow:0 12px 26px -12px rgba(201,154,63,.8)}
+.btn-oro:hover{box-shadow:0 20px 34px -14px rgba(201,154,63,.9)}
+
+.btn-fantasma{
+  background:transparent;color:var(--crema);
+  border:1px solid rgba(251,245,233,.4);
+  box-shadow:none;
+}
+.btn-fantasma:hover{background:rgba(251,245,233,.1);border-color:var(--oro-claro);box-shadow:none}
+
+.btn-linea{
+  background:transparent;color:var(--terracota);
+  border:1px solid rgba(196,85,43,.45);box-shadow:none;
+}
+.btn-linea:hover{background:var(--terracota);color:#fff;box-shadow:0 16px 30px -16px rgba(196,85,43,.8)}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+.reveal.visible{opacity:1;transform:none}
+
+/* ============================================================
+   NAVEGACIÓN
+============================================================ */
+.barra-superior{
+  background:var(--teal-osc);color:rgba(251,245,233,.8);
+  font-size:.76rem;letter-spacing:.06em;
+  position:relative;z-index:60;
+}
+.barra-superior .contenedor{
+  display:flex;justify-content:space-between;align-items:center;
+  gap:1rem;padding:.55rem 0;flex-wrap:wrap;
+}
+.barra-superior .item{display:inline-flex;align-items:center;gap:.45rem}
+.barra-superior svg{width:13px;height:13px;color:var(--oro);flex-shrink:0}
+.barra-superior .der{display:flex;gap:1.4rem;flex-wrap:wrap}
+.barra-superior .aviso{
+  color:var(--oro-claro);font-weight:500;
+}
+.barra-superior .aviso::before{
+  content:'';display:inline-block;
+  width:7px;height:7px;border-radius:50%;background:var(--oro-claro);
+  margin-right:.5rem;vertical-align:middle;
+  animation:parpadeo 1.8s ease-in-out infinite;
+}
+@keyframes parpadeo{0%,100%{opacity:1}50%{opacity:.25}}
+
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,245,233,.82);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(58,36,24,.09);
+  transition:box-shadow .4s,padding .4s,background .4s;
+}
+.nav.compacto{box-shadow:0 12px 34px -22px rgba(32,21,14,.55);background:rgba(251,245,233,.95)}
+.nav .contenedor{display:flex;align-items:center;justify-content:space-between;gap:1rem;height:var(--nav-h);transition:height .4s}
+.nav.compacto .contenedor{height:66px}
+
+.marca{display:flex;align-items:center;gap:.8rem}
+.marca-emblema{
+  width:44px;height:44px;flex-shrink:0;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:linear-gradient(145deg,var(--terracota),var(--terracota-osc));
+  color:var(--oro-claro);
+  box-shadow:0 8px 18px -8px rgba(155,61,27,.9), inset 0 0 0 2px rgba(233,204,133,.35);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.marca:hover .marca-emblema{transform:rotate(-12deg) scale(1.06)}
+.marca-emblema svg{width:22px;height:22px}
+.marca-texto{display:flex;flex-direction:column;line-height:1}
+.marca-nombre{
+  font-family:var(--fuente-display);font-weight:900;
+  font-size:1.22rem;letter-spacing:.01em;color:var(--madera);
+}
+.marca-sub{
+  font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--terracota);font-weight:500;margin-top:2px;
+}
+
+.enlaces{display:flex;align-items:center;gap:2rem}
+.enlaces a{
+  font-size:.82rem;font-weight:400;letter-spacing:.08em;
+  color:#4b382b;position:relative;padding:.35rem 0;
+  transition:color .3s;
+}
+.enlaces a::after{
+  content:'';position:absolute;left:0;bottom:0;height:1.5px;width:0;
+  background:var(--terracota);transition:width .4s cubic-bezier(.2,.8,.2,1);
+}
+.enlaces a:hover,.enlaces a.activo{color:var(--terracota)}
+.enlaces a:hover::after,.enlaces a.activo::after{width:100%}
+
+.nav-acciones{display:flex;align-items:center;gap:.9rem}
+.nav-acciones .btn{padding:.75rem 1.5rem;font-size:.74rem}
+
+.hamburguesa{
+  display:none;width:46px;height:46px;border-radius:12px;
+  background:transparent;border:1px solid rgba(58,36,24,.18);
+  cursor:pointer;position:relative;flex-shrink:0;
+}
+.hamburguesa span{
+  position:absolute;left:50%;width:20px;height:1.8px;background:var(--madera);
+  border-radius:2px;transform:translateX(-50%);
+  transition:transform .35s,opacity .25s,top .35s;
+}
+.hamburguesa span:nth-child(1){top:16px}
+.hamburguesa span:nth-child(2){top:22px}
+.hamburguesa span:nth-child(3){top:28px}
+.hamburguesa.abierto span:nth-child(1){top:22px;transform:translateX(-50%) rotate(45deg)}
+.hamburguesa.abierto span:nth-child(2){opacity:0}
+.hamburguesa.abierto span:nth-child(3){top:22px;transform:translateX(-50%) rotate(-45deg)}
+
+.menu-movil{
+  position:fixed;inset:0;z-index:45;
+  background:linear-gradient(165deg,#0b2429,#123f45 55%,#2a1810);
+  padding:calc(var(--nav-h) + 3rem) 8% 3rem;
+  display:flex;flex-direction:column;justify-content:center;gap:.4rem;
+  clip-path:circle(0% at calc(100% - 46px) 46px);
+  transition:clip-path .7s cubic-bezier(.7,0,.2,1);
+  overflow-y:auto;
+}
+.menu-movil.abierto{clip-path:circle(150% at calc(100% - 46px) 46px)}
+.menu-movil::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L52 28 L76 40 L52 52 L40 76 L28 52 L4 40 L28 28 Z' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3C/svg%3E");
+  opacity:.06;
+}
+.menu-movil a{
+  font-family:var(--fuente-display);font-weight:500;
+  font-size:clamp(1.7rem,7vw,2.4rem);
+  color:var(--crema);padding:.5rem 0;
+  display:flex;align-items:baseline;gap:1rem;
+  border-bottom:1px solid rgba(251,245,233,.08);
+  position:relative;z-index:1;
+  opacity:0;transform:translateY(22px);
+  transition:opacity .5s,transform .5s,color .3s,padding-left .35s;
+}
+.menu-movil.abierto a{opacity:1;transform:none;transition-delay:calc(.12s + var(--i) * .07s)}
+.menu-movil a small{
+  font-family:var(--fuente-texto);font-size:.65rem;letter-spacing:.2em;
+  color:var(--oro);font-weight:400;
+}
+.menu-movil a:hover,.menu-movil a:focus-visible{color:var(--oro-claro);padding-left:.6rem}
+.menu-movil .movil-pie{
+  margin-top:2.5rem;position:relative;z-index:1;
+  display:flex;flex-direction:column;gap:.7rem;
+  font-size:.85rem;color:rgba(251,245,233,.6);
+}
+.menu-movil .movil-pie strong{color:var(--oro-claro);font-weight:500;letter-spacing:.1em;font-size:.7rem;text-transform:uppercase}
+
+/* ============================================================
+   HERO
+============================================================ */
+.hero{
+  position:relative;isolation:isolate;
+  min-height:calc(100svh - var(--nav-h));
+  display:flex;align-items:center;
+  padding:clamp(3.5rem,8vw,6rem) 0 clamp(5rem,10vw,8rem);
+  overflow:hidden;
+  background:
+    radial-gradient(ellipse 70% 55% at 78% 12%, rgba(201,154,63,.26), transparent 60%),
+    radial-gradient(ellipse 65% 60% at 12% 88%, rgba(196,85,43,.34), transparent 62%),
+    radial-gradient(ellipse 90% 70% at 50% 120%, rgba(23,132,143,.28), transparent 70%),
+    linear-gradient(158deg,#0d3238 0%,#0a2227 38%,#1d120c 100%);
+}
+.hero::before{
+  content:'';position:absolute;inset:0;z-index:-1;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L52 28 L76 40 L52 52 L40 76 L28 52 L4 40 L28 28 Z' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3C/svg%3E");
+  opacity:.075;
+  mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,#000 20%,transparent 78%);
+  -webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 40%,#000 20%,transparent 78%);
+}
+.hero::after{
+  content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    conic-gradient(from 200deg at 82% -10%, transparent 0deg, rgba(233,204,133,.09) 12deg, transparent 26deg),
+    conic-gradient(from 210deg at 82% -10%, transparent 0deg, rgba(233,204,133,.06) 8deg, transparent 18deg);
+}
+
+.hero-grid{
+  display:grid;grid-template-columns:1.15fr .85fr;
+  gap:clamp(2rem,5vw,4.5rem);align-items:center;
+}
+
+.hero-contenido{position:relative;z-index:2}
+
+.hero-insignia{
+  display:inline-flex;align-items:center;gap:.7rem;
+  padding:.42rem 1.05rem .42rem .5rem;
+  border:1px solid rgba(233,204,133,.3);
+  border-radius:999px;
+  background:rgba(251,245,233,.06);
+  backdrop-filter:blur(6px);
+  font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--oro-claro);font-weight:400;
+  margin-bottom:1.6rem;
+}
+.hero-insignia b{
+  background:var(--oro);color:#241408;font-weight:600;
+  padding:.16rem .6rem;border-radius:999px;font-size:.66rem;letter-spacing:.1em;
+}
+.hero-insignia .punto{
+  width:7px;height:7px;border-radius:50%;background:#7ee08a;
+  display:inline-block;margin-left:.4rem;
+  animation:parpadeo 1.8s ease-in-out infinite;
+}
+
+.hero h1{
+  font-family:var(--fuente-display);
+  font-weight:900;
+  font-size:clamp(3rem,9.5vw,6.6rem);
+  line-height:.92;
+  letter-spacing:-.035em;
+  color:var(--crema);
+  margin-bottom:.4rem;
+}
+.hero h1 .linea-2{
+  display:block;
+  font-style:italic;font-weight:500;
+  background:linear-gradient(100deg,var(--oro-claro),var(--oro) 45%,#f0dcae 70%,var(--terracota));
+  -webkit-background-clip:text;background-clip:text;
+  -webkit-text-fill-color:transparent;color:transparent;
+  padding-right:.08em;
+}
+
+.hero-tipo{
+  display:flex;align-items:center;gap:.9rem;
+  font-size:clamp(.72rem,1.6vw,.86rem);
+  letter-spacing:.42em;text-transform:uppercase;
+  color:rgba(251,245,233,.62);font-weight:300;
+  margin-bottom:1.5rem;
+}
+.hero-tipo::before,.hero-tipo::after{
+  content:'';height:1px;flex:1;max-width:70px;
+  background:linear-gradient(90deg,transparent,rgba(233,204,133,.6));
+}
+.hero-tipo::after{background:linear-gradient(90deg,rgba(233,204,133,.6),transparent)}
+
+.hero-texto{
+  color:rgba(251,245,233,.76);
+  font-size:clamp(1rem,1.9vw,1.12rem);
+  max-width:46ch;margin-bottom:2.2rem;
+  font-weight:300;
+}
+.hero-texto strong{color:var(--oro-claro);font-weight:500}
+
+.hero-botones{display:flex;gap:1rem;flex-wrap:wrap;margin-bottom:3rem}
+
+.hero-datos{
+  display:flex;gap:clamp(1.5rem,4vw,3.2rem);flex-wrap:wrap;
+  padding-top:1.8rem;
+  border-top:1px solid rgba(251,245,233,.14);
+}
+.hero-dato b{
+  display:block;font-family:var(--fuente-display);font-weight:700;
+  font-size:clamp(1.5rem,3.4vw,2.1rem);color:var(--oro-claro);line-height:1;
+  font-variant-numeric:tabular-nums;
+}
+.hero-dato span{
+  font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;
+  color:rgba(251,245,233,.5);
+}
+
+.hero-tarjeta{
+  position:relative;z-index:2;
+  background:rgba(251,245,233,.055);
+  border:1px solid rgba(233,204,133,.22);
+  border-radius:22px;
+  padding:2rem 1.9rem;
+  backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  box-shadow:0 40px 80px -40px rgba(0,0,0,.9);
+  animation:flotar 7s ease-in-out infinite;
+}
+@keyframes flotar{0%,100%{transform:translateY(0)}50%{transform:translateY(-12px)}}
+
+.hero-tarjeta h3{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:1.32rem;color:var(--crema);margin-bottom:.3rem;
+}
+.hero-tarjeta .mini{
+  font-size:.68rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--oro);margin-bottom:1.4rem;
+}
+.hero-lista{display:flex;flex-direction:column;gap:.1rem}
+.hero-lista li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem;
+  padding:.72rem 0;
+  border-bottom:1px dashed rgba(251,245,233,.12);
+  font-size:.92rem;color:rgba(251,245,233,.86);
+}
+.hero-lista li:last-child{border-bottom:none}
+.hero-lista .precio{
+  font-family:var(--fuente-display);font-weight:700;
+  color:var(--oro-claro);font-size:1rem;white-space:nowrap;
+}
+.hero-lista .nota{
+  display:block;font-size:.72rem;color:rgba(251,245,233,.45);
+  letter-spacing:.04em;margin-top:.1rem;
+}
+
+.hero-borde{
+  position:absolute;left:0;right:0;bottom:-1px;height:clamp(38px,6vw,72px);
+  z-index:3;pointer-events:none;
+}
+.hero-borde svg{width:100%;height:100%;display:block}
+
+.scroll-ind{
+  position:absolute;bottom:calc(clamp(38px,6vw,72px) + 14px);left:50%;
+  transform:translateX(-50%);z-index:4;
+  display:flex;flex-direction:column;align-items:center;gap:.5rem;
+  font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(251,245,233,.42);
+}
+.scroll-ind .raton{
+  width:22px;height:36px;border:1.5px solid rgba(233,204,133,.5);
+  border-radius:12px;position:relative;
+}
+.scroll-ind .raton::after{
+  content:'';position:absolute;left:50%;top:7px;
+  width:3px;height:7px;border-radius:2px;background:var(--oro-claro);
+  transform:translateX(-50%);
+  animation:rueda 2s cubic-bezier(.6,0,.3,1) infinite;
+}
+@keyframes rueda{
+  0%{opacity:0;transform:translate(-50%,0)}
+  30%{opacity:1}
+  100%{opacity:0;transform:translate(-50%,13px)}
+}
+
+/* ============================================================
+   APERTURA / CUENTA REGRESIVA
+============================================================ */
+.apertura{
+  position:relative;isolation:isolate;
+  padding:clamp(3.5rem,8vw,5.5rem) 0;
+  background:
+    radial-gradient(ellipse 60% 60% at 20% 20%, rgba(201,154,63,.22), transparent 60%),
+    radial-gradient(ellipse 60% 60% at 85% 80%, rgba(196,85,43,.28), transparent 60%),
+    linear-gradient(160deg,#0a2227,#0d3238 55%,#1a1109);
+  overflow:hidden;
+  text-align:center;
+  border-bottom:1px solid rgba(233,204,133,.18);
+}
+.apertura::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L52 28 L76 40 L52 52 L40 76 L28 52 L4 40 L28 28 Z' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3C/svg%3E");
+  opacity:.06;
+}
+.apertura .contenido{position:relative;z-index:2}
+.apertura .script{margin-bottom:.3rem}
+
+.cuenta{
+  display:flex;justify-content:center;gap:clamp(.6rem,2.5vw,1.6rem);
+  margin:2rem 0 1.8rem;flex-wrap:wrap;
+}
+.cuenta-item{
+  min-width:clamp(74px,18vw,120px);
+  padding:clamp(.9rem,2.5vw,1.4rem) clamp(.7rem,2vw,1.2rem);
+  background:rgba(251,245,233,.055);
+  border:1px solid rgba(233,204,133,.25);
+  border-radius:16px;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  position:relative;
+}
+.cuenta-num{
+  display:block;
+  font-family:var(--fuente-display);font-weight:900;
+  font-size:clamp(2rem,6vw,3.2rem);
+  line-height:1;color:var(--oro-claro);
+  letter-spacing:-.03em;
+  font-variant-numeric:tabular-nums;
+}
+.cuenta-lab{
+  display:block;margin-top:.5rem;
+  font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;
+  color:rgba(251,245,233,.5);
+}
+.apertura .aviso-apertura{
+  font-size:clamp(.95rem,1.8vw,1.05rem);
+  color:rgba(251,245,233,.72);
+  margin-bottom:1.8rem;
+  max-width:46ch;margin-inline:auto;
+}
+.apertura .aviso-apertura strong{color:var(--oro-claro);font-weight:500}
+.apertura .btn{margin-top:.2rem}
+
+.apertura.abierta .cuenta{display:none}
+.apertura .mensaje-abierto{display:none}
+.apertura.abierta .mensaje-abierto{
+  display:block;
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:clamp(1.6rem,4vw,2.4rem);
+  color:var(--oro-claro);
+  margin:2rem 0 1.8rem;
+}
+
+/* ============================================================
+   CINTA / MARQUEE
+============================================================ */
+.cinta{
+  background:var(--terracota);
+  color:var(--crema);
+  padding:.95rem 0;overflow:hidden;
+  border-top:1px solid rgba(233,204,133,.25);
+  border-bottom:1px solid rgba(233,204,133,.25);
+}
+.cinta-pista{
+  display:flex;gap:3rem;width:max-content;
+  animation:deslizar 32s linear infinite;
+}
+.cinta:hover .cinta-pista{animation-play-state:paused}
+@keyframes deslizar{to{transform:translateX(-50%)}}
+.cinta-item{
+  display:flex;align-items:center;gap:3rem;
+  font-family:var(--fuente-display);font-style:italic;
+  font-size:clamp(.95rem,2vw,1.15rem);
+  white-space:nowrap;letter-spacing:.02em;
+}
+.cinta-item::after{
+  content:'✦';color:var(--oro-claro);font-style:normal;font-size:.8rem;
+}
+
+/* ============================================================
+   SECCIONES
+============================================================ */
+.seccion{padding:clamp(4.5rem,10vw,8.5rem) 0;position:relative}
+.seccion-crema{background:var(--crema)}
+.seccion-arena{background:linear-gradient(180deg,var(--crema) 0%,var(--crema-2) 45%,var(--crema-2) 55%,var(--crema) 100%)}
+
+.cabecera{max-width:660px;margin-bottom:clamp(2.5rem,6vw,4rem)}
+.cabecera.centrada{margin-inline:auto;text-align:center}
+.cabecera.centrada .parrafo{margin-inline:auto}
+.cabecera .parrafo{margin-top:1.1rem}
+
+/* ============================================================
+   HISTORIA
+============================================================ */
+.historia-grid{
+  display:grid;grid-template-columns:1fr 1.05fr;
+  gap:clamp(2.5rem,6vw,5.5rem);align-items:center;
+}
+
+.arco{
+  position:relative;
+  border-radius:260px 260px 18px 18px;
+  overflow:hidden;
+  aspect-ratio:4/5;
+  box-shadow:var(--sombra-fuerte);
+  background:
+    radial-gradient(ellipse 70% 50% at 50% 15%, rgba(233,204,133,.35), transparent 60%),
+    linear-gradient(175deg,#8a3f1f 0%,#5c2a16 30%,#2e1a0f 65%,#150c07 100%);
+}
+.arco::before{
+  content:'';position:absolute;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cpath d='M30 2 L42 30 L30 58 L18 30 Z' fill='none' stroke='%23E9CC85' stroke-width='.8'/%3E%3C/svg%3E");
+  opacity:.13;
+}
+.arco::after{
+  content:'';position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 35%,rgba(0,0,0,.55));
+}
+.arco-marco{
+  position:absolute;inset:14px;z-index:2;
+  border:1px solid rgba(233,204,133,.4);
+  border-radius:246px 246px 10px 10px;
+  pointer-events:none;
+}
+.arco-contenido{
+  position:absolute;z-index:3;bottom:0;left:0;right:0;
+  padding:clamp(1.6rem,4vw,2.6rem);
+  text-align:center;
+}
+.arco-contenido .anio{
+  font-family:var(--fuente-display);font-weight:900;
+  font-size:clamp(2.6rem,7vw,4rem);line-height:1;
+  color:var(--oro-claro);letter-spacing:-.03em;
+  text-shadow:0 6px 26px rgba(0,0,0,.7);
+}
+.arco-contenido p{
+  font-size:.68rem;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(251,245,233,.72);margin-top:.5rem;
+}
+.arco-ornamento{
+  position:absolute;top:clamp(1.5rem,4vw,2.6rem);left:50%;transform:translateX(-50%);
+  z-index:3;color:var(--oro-claro);opacity:.9;
+}
+.arco-ornamento svg{width:clamp(38px,8vw,56px);height:auto}
+
+.historia-texto .parrafo + .parrafo{margin-top:1rem}
+
+.historia-cita{
+  margin-top:2rem;padding:1.4rem 1.6rem;
+  border-left:3px solid var(--oro);
+  background:linear-gradient(90deg,rgba(201,154,63,.1),transparent);
+  border-radius:0 12px 12px 0;
+}
+.historia-cita p{
+  font-family:var(--fuente-display);font-style:italic;
+  font-size:1.05rem;color:var(--madera);line-height:1.55;
+}
+.historia-cita cite{
+  display:block;margin-top:.7rem;font-size:.72rem;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--terracota);
+  font-style:normal;
+}
+
+.valores{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:1rem;margin-top:2.4rem;
+}
+.valor{
+  padding:1.25rem 1.1rem;
+  background:rgba(255,255,255,.65);
+  border:1px solid rgba(58,36,24,.08);
+  border-radius:14px;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,border-color .45s;
+}
+.valor:hover{transform:translateY(-6px);box-shadow:var(--sombra-suave);border-color:rgba(201,154,63,.45)}
+.valor svg{width:26px;height:26px;color:var(--terracota);margin-bottom:.6rem}
+.valor h4{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:1rem;margin-bottom:.25rem;
+}
+.valor p{font-size:.82rem;color:#6b5749;line-height:1.5}
+
+/* ============================================================
+   CARTA
+============================================================ */
+.carta{background:linear-gradient(180deg,#0c2b30,#0a2227 60%,#12100c)}
+.carta::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L52 28 L76 40 L52 52 L40 76 L28 52 L4 40 L28 28 Z' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3C/svg%3E");
+  opacity:.05;
+}
+
+.aviso-carta{
+  display:inline-flex;align-items:center;gap:.7rem;
+  margin:0 auto 1.5rem;
+  padding:.55rem 1.2rem;
+  background:rgba(201,154,63,.12);
+  border:1px dashed rgba(201,154,63,.5);
+  border-radius:999px;
+  font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--oro-claro);
+  position:relative;z-index:2;
+}
+.aviso-carta svg{width:14px;height:14px;flex-shrink:0}
+
+.tabs{
+  display:flex;gap:.6rem;flex-wrap:wrap;justify-content:center;
+  margin-bottom:clamp(2rem,5vw,3.2rem);
+  position:relative;z-index:2;
+}
+.tab{
+  padding:.72rem 1.5rem;
+  background:transparent;
+  border:1px solid rgba(233,204,133,.28);
+  border-radius:999px;
+  color:rgba(251,245,233,.68);
+  font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:400;
+  cursor:pointer;transition:all .35s cubic-bezier(.2,.8,.2,1);
+}
+.tab:hover{border-color:rgba(233,204,133,.6);color:var(--crema)}
+.tab.activo{
+  background:var(--oro);border-color:var(--oro);color:#241408;font-weight:600;
+  box-shadow:0 12px 26px -12px rgba(201,154,63,.9);
+}
+
+.platos{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));
+  gap:0 clamp(2rem,5vw,4rem);
+  position:relative;z-index:2;
+}
+.plato{
+  padding:1.5rem 0;
+  border-bottom:1px solid rgba(233,204,133,.14);
+  position:relative;
+  transition:opacity .4s,transform .4s;
+}
+.plato.oculto{display:none}
+.plato.entrando{animation:aparecer .5s cubic-bezier(.2,.8,.2,1) both}
+@keyframes aparecer{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+.plato-cab{display:flex;align-items:baseline;gap:.8rem}
+.plato-nombre{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:1.16rem;color:var(--crema);
+  transition:color .3s;
+}
+.plato:hover .plato-nombre{color:var(--oro-claro)}
+.plato-puntos{
+  flex:1;height:1px;min-width:18px;
+  background-image:radial-gradient(circle,rgba(233,204,133,.45) 1px,transparent 1px);
+  background-size:7px 1px;background-repeat:repeat-x;background-position:0 50%;
+}
+.plato-precio{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:1.1rem;color:var(--oro);white-space:nowrap;
+}
+.plato-desc{
+  font-size:.86rem;color:rgba(251,245,233,.58);
+  margin-top:.4rem;max-width:44ch;line-height:1.6;
+}
+.plato-fav{
+  display:inline-block;vertical-align:middle;
+  margin-left:.5rem;padding:.14rem .55rem;
+  font-size:.56rem;letter-spacing:.16em;text-transform:uppercase;
+  background:rgba(196,85,43,.9);color:#fff;border-radius:999px;
+  font-weight:600;position:relative;top:-2px;
+}
+
+.carta-pie{
+  margin-top:clamp(2.5rem,5vw,3.5rem);
+  text-align:center;position:relative;z-index:2;
+}
+.carta-pie p{
+  font-size:.8rem;color:rgba(251,245,233,.45);
+  letter-spacing:.05em;margin-bottom:1.4rem;
+}
+
+/* ============================================================
+   BAR / CÓCTELES
+============================================================ */
+.bar-grid{
+  display:grid;grid-template-columns:.95fr 1.05fr;
+  gap:clamp(2.5rem,6vw,5rem);align-items:center;
+}
+.cocteles{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.coctel{
+  position:relative;
+  padding:1.4rem 1.3rem;
+  background:rgba(255,255,255,.7);
+  border:1px solid rgba(58,36,24,.09);
+  border-radius:16px;
+  overflow:hidden;
+  transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s,background .45s;
+}
+.coctel::before{
+  content:'';position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--oro),var(--terracota));
+  transform:scaleY(0);transform-origin:top;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.coctel:hover{transform:translateY(-6px);box-shadow:var(--sombra-suave);background:#fff}
+.coctel:hover::before{transform:scaleY(1)}
+.coctel .icono{
+  width:34px;height:34px;color:var(--terracota);
+  margin-bottom:.7rem;
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.coctel:hover .icono{transform:rotate(-8deg) scale(1.1)}
+.coctel h4{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:1.05rem;margin-bottom:.18rem;
+}
+.coctel p{font-size:.78rem;color:#6b5749;line-height:1.5}
+.coctel .p{
+  position:absolute;top:1.15rem;right:1.2rem;
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:.98rem;color:var(--terracota);
+}
+
+.bar-texto .parrafo + .parrafo{margin-top:1rem}
+.bar-nota{
+  margin-top:1.8rem;display:flex;gap:.9rem;align-items:flex-start;
+  padding:1.1rem 1.2rem;
+  background:linear-gradient(120deg,rgba(14,90,97,.09),rgba(201,154,63,.09));
+  border-radius:14px;border:1px dashed rgba(14,90,97,.3);
+}
+.bar-nota svg{width:22px;height:22px;color:var(--teal);flex-shrink:0;margin-top:.15rem}
+.bar-nota p{font-size:.85rem;color:#4b382b;line-height:1.6;margin:0}
+
+/* ============================================================
+   GALERÍA
+============================================================ */
+.galeria{
+  display:grid;
+  grid-template-columns:repeat(6,1fr);
+  grid-auto-rows:minmax(150px,auto);
+  gap:clamp(.7rem,1.6vw,1.1rem);
+}
+.foto{
+  position:relative;overflow:hidden;border-radius:16px;
+  min-height:190px;cursor:pointer;
+  box-shadow:0 14px 34px -20px rgba(32,21,14,.6);
+  transition:transform .6s cubic-bezier(.2,.8,.2,1),box-shadow .6s;
+}
+.foto:hover{transform:translateY(-6px);box-shadow:0 30px 55px -26px rgba(32,21,14,.7)}
+.foto::before{
+  content:'';position:absolute;inset:0;z-index:1;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cpath d='M20 1 L27 20 L20 39 L13 20 Z' fill='none' stroke='%23ffffff' stroke-width='.7'/%3E%3C/svg%3E");
+  opacity:.07;
+}
+.foto::after{
+  content:'';position:absolute;inset:0;z-index:2;
+  background:linear-gradient(180deg,transparent 40%,rgba(12,8,5,.82));
+  transition:opacity .5s;
+}
+.foto:hover::after{opacity:.92}
+.foto-cap{
+  position:absolute;left:0;right:0;bottom:0;z-index:3;
+  padding:1.2rem 1.3rem;
+  transform:translateY(6px);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.foto:hover .foto-cap{transform:none}
+.foto-cap .sub{
+  display:block;font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--oro-claro);margin-bottom:.28rem;
+  opacity:0;transform:translateY(8px);
+  transition:opacity .45s .06s,transform .45s .06s;
+}
+.foto:hover .foto-cap .sub{opacity:1;transform:none}
+.foto-cap h4{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:clamp(.95rem,1.9vw,1.15rem);color:#fff;
+  letter-spacing:-.01em;
+}
+.foto-cap p{
+  font-size:.76rem;color:rgba(255,255,255,.66);
+  max-height:0;overflow:hidden;opacity:0;
+  transition:max-height .5s,opacity .4s .08s,margin .5s;
+}
+.foto:hover .foto-cap p{max-height:60px;opacity:1;margin-top:.35rem}
+
+.f-a{grid-column:span 3;grid-row:span 2}
+.f-b{grid-column:span 3}
+.f-c{grid-column:span 3}
+.f-d{grid-column:span 2}
+.f-e{grid-column:span 2}
+.f-f{grid-column:span 2}
+
+.bg-salon{background:
+  radial-gradient(ellipse 60% 45% at 50% 20%, rgba(233,204,133,.5), transparent 62%),
+  linear-gradient(165deg,#5c3218 0%,#8a4a22 35%,#c4772b 62%,#3a2418 100%)}
+.bg-barra{background:
+  radial-gradient(circle at 50% 26%, rgba(233,204,133,.42), transparent 58%),
+  radial-gradient(circle at 18% 78%, rgba(196,85,43,.4), transparent 55%),
+  linear-gradient(160deg,#0a2f34,#0e5a61 60%,#08201f)}
+.bg-terraza{background:
+  radial-gradient(circle at 76% 22%, rgba(255,214,140,.75), transparent 42%),
+  linear-gradient(178deg,#3a1c46 0%,#8a2f3a 32%,#d9762f 62%,#e8b45c 88%,#8a5a22 100%)}
+.bg-cocina{background:
+  radial-gradient(ellipse 55% 40% at 70% 30%, rgba(255,190,120,.45), transparent 60%),
+  linear-gradient(140deg,#3a1c12,#a8442a 48%,#d97a3d 78%,#6b3018)}
+.bg-musica{background:
+  radial-gradient(circle at 28% 74%, rgba(201,154,63,.5), transparent 52%),
+  radial-gradient(circle at 80% 20%, rgba(196,85,43,.42), transparent 50%),
+  linear-gradient(150deg,#140c1c,#3d1f3a 50%,#6b2f3e)}
+.bg-ron{background:
+  radial-gradient(ellipse 50% 40% at 50% 42%, rgba(233,204,133,.48), transparent 58%),
+  linear-gradient(150deg,#1b0f06,#4a2a12 48%,#8a5a22 82%,#241408)}
+
+/* ============================================================
+   TESTIMONIOS
+============================================================ */
+.testimonios{
+  display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));
+  gap:clamp(1.2rem,3vw,1.8rem);
+}
+.testimonio{
+  position:relative;
+  background:#fff;
+  border:1px solid rgba(58,36,24,.08);
+  border-radius:20px;
+  padding:2.2rem 1.9rem 1.9rem;
+  box-shadow:0 18px 44px -30px rgba(32,21,14,.6);
+  transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s;
+  overflow:hidden;
+}
+.testimonio::before{
+  content:'"';
+  position:absolute;top:-2.2rem;right:1rem;
+  font-family:var(--fuente-display);font-weight:900;
+  font-size:9rem;line-height:1;color:rgba(201,154,63,.13);
+  pointer-events:none;
+}
+.testimonio:hover{transform:translateY(-8px);box-shadow:0 32px 60px -32px rgba(32,21,14,.65)}
+.estrellas{display:flex;gap:.2rem;margin-bottom:1rem;color:var(--oro)}
+.estrellas svg{width:16px;height:16px}
+.testimonio blockquote{
+  font-family:var(--fuente-display);font-style:italic;
+  font-size:1.02rem;line-height:1.65;color:#3a2a1e;
+  margin-bottom:1.5rem;position:relative;z-index:1;
+}
+.testimonio-autor{display:flex;align-items:center;gap:.85rem}
+.avatar{
+  width:44px;height:44px;border-radius:50%;flex-shrink:0;
+  display:grid;place-items:center;
+  font-family:var(--fuente-display);font-weight:700;
+  color:#fff;font-size:1rem;
+  box-shadow:0 8px 18px -10px rgba(32,21,14,.8);
+}
+.testimonio-autor b{display:block;font-size:.92rem;font-weight:500;color:var(--madera)}
+.testimonio-autor span{font-size:.74rem;color:#8b7566;letter-spacing:.04em}
+
+/* ============================================================
+   RESERVA / CONTACTO
+============================================================ */
+.reserva{
+  background:
+    radial-gradient(ellipse 70% 60% at 15% 10%, rgba(23,132,143,.3), transparent 60%),
+    radial-gradient(ellipse 60% 55% at 88% 85%, rgba(196,85,43,.32), transparent 62%),
+    linear-gradient(160deg,#0a2227,#0d3238 45%,#1d120c);
+  position:relative;overflow:hidden;
+}
+.reserva::before{
+  content:'';position:absolute;inset:0;pointer-events:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cpath d='M40 4 L52 28 L76 40 L52 52 L40 76 L28 52 L4 40 L28 28 Z' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3Ccircle cx='40' cy='40' r='5' fill='none' stroke='%23C99A3F' stroke-width='1'/%3E%3C/svg%3E");
+  opacity:.06;
+}
+.reserva-grid{
+  display:grid;grid-template-columns:1fr 1.05fr;
+  gap:clamp(2.5rem,6vw,4.5rem);align-items:start;
+  position:relative;z-index:2;
+}
+
+.datos-contacto{display:flex;flex-direction:column;gap:1.3rem;margin-top:2.4rem}
+.dato{
+  display:flex;gap:1rem;align-items:flex-start;
+  padding-bottom:1.3rem;
+  border-bottom:1px solid rgba(251,245,233,.1);
+}
+.dato:last-child{border-bottom:none;padding-bottom:0}
+.dato-icono{
+  width:44px;height:44px;flex-shrink:0;border-radius:13px;
+  display:grid;place-items:center;
+  background:rgba(233,204,133,.1);
+  border:1px solid rgba(233,204,133,.22);
+  color:var(--oro-claro);
+}
+.dato-icono svg{width:19px;height:19px}
+.dato h4{
+  font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--oro);font-weight:500;margin-bottom:.3rem;
+}
+.dato p,.dato a{
+  font-size:.95rem;color:rgba(251,245,233,.82);line-height:1.55;
+  transition:color .3s;
+}
+.dato a:hover{color:var(--oro-claro)}
+
+.form-caja{
+  background:var(--crema);
+  border-radius:24px;
+  padding:clamp(1.8rem,4vw,2.8rem);
+  box-shadow:0 50px 90px -50px rgba(0,0,0,.95);
+  position:relative;
+}
+.form-caja::before{
+  content:'';position:absolute;inset:9px;
+  border:1px solid rgba(201,154,63,.28);
+  border-radius:17px;pointer-events:none;
+}
+.form-caja h3{
+  font-family:var(--fuente-display);font-weight:700;
+  font-size:1.5rem;margin-bottom:.35rem;
+}
+.form-caja .sub{font-size:.86rem;color:#7a6555;margin-bottom:1.8rem}
+
+.campos{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.campo{position:relative;display:flex;flex-direction:column}
+.campo.ancho{grid-column:1/-1}
+.campo label{
+  font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+  color:#7a6555;font-weight:500;margin-bottom:.42rem;
+}
+.campo input,.campo select,.campo textarea{
+  width:100%;
+  padding:.82rem 1rem;
+  background:#fff;
+  border:1px solid rgba(58,36,24,.16);
+  border-radius:11px;
+  font-size:.92rem;font-family:var(--fuente-texto);
+  transition:border-color .3s,box-shadow .3s,background .3s;
+  outline:none;
+}
+.campo textarea{resize:vertical;min-height:100px;line-height:1.6}
+.campo select{appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%239B3D1B' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 1rem center;padding-right:2.4rem;
+}
+.campo input:focus,.campo select:focus,.campo textarea:focus{
+  border-color:var(--terracota);
+  box-shadow:0 0 0 4px rgba(196,85,43,.12);
+  background:#fffdf9;
+}
+.campo input::placeholder,.campo textarea::placeholder{color:#b6a597}
+.campo.error input,.campo.error select,.campo.error textarea{
+  border-color:#c0392b;box-shadow:0 0 0 4px rgba(192,57,43,.1);
+}
+.campo .aviso{
+  font-size:.7rem;color:#c0392b;margin-top:.32rem;
+  height:0;overflow:hidden;opacity:0;transition:height .3s,opacity .3s;
+}
+.campo.error .aviso{height:1rem;opacity:1}
+
+.form-caja .btn{width:100%;margin-top:1.5rem;padding:1.05rem 2rem}
+.form-pie{
+  margin-top:.9rem;font-size:.72rem;color:#8b7566;text-align:center;line-height:1.5;
+}
+
+.exito{
+  position:absolute;inset:0;z-index:5;
+  display:none;flex-direction:column;align-items:center;justify-content:center;
+  text-align:center;padding:2.5rem;
+  background:var(--crema);border-radius:24px;
+}
+.exito.visible{display:flex;animation:aparecer .5s cubic-bezier(.2,.8,.2,1) both}
+.exito .check{
+  width:78px;height:78px;border-radius:50%;
+  display:grid;place-items:center;margin-bottom:1.4rem;
+  background:linear-gradient(145deg,var(--verde),#2c5236);
+  box-shadow:0 18px 36px -16px rgba(62,107,74,.9);
+  animation:pop .55s cubic-bezier(.2,1.5,.5,1) both .1s;
+}
+@keyframes pop{from{transform:scale(.4);opacity:0}to{transform:scale(1);opacity:1}}
+.exito .check svg{width:36px;height:36px;color:#fff}
+.exito h3{font-family:var(--fuente-display);font-weight:700;font-size:1.7rem;margin-bottom:.5rem}
+.exito p{color:#6b5749;font-size:.94rem;max-width:36ch;margin-bottom:1.6rem}
+
+/* ============================================================
+   FOOTER
+============================================================ */
+.footer{
+  background:#150d08;color:rgba(251,245,233,.6);
+  padding:clamp(3.5rem,8vw,5.5rem) 0 0;
+  position:relative;overflow:hidden;
+}
+.footer::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(201,154,63,.6),transparent);
+}
+.footer-grid{
+  display:grid;grid-template-columns:1.5fr 1fr 1fr 1.2fr;
+  gap:clamp(1.8rem,4vw,3rem);
+  padding-bottom:3rem;
+}
+.footer-marca{display:flex;align-items:center;gap:.8rem;margin-bottom:1.1rem}
+.footer-marca .marca-nombre{color:var(--crema)}
+.footer-marca .marca-sub{color:var(--oro)}
+.footer-texto{font-size:.86rem;line-height:1.75;max-width:34ch}
+
+.footer h4{
+  font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--oro);font-weight:500;margin-bottom:1.2rem;
+}
+.footer-lista{display:flex;flex-direction:column;gap:.62rem}
+.footer-lista a,.footer-lista li{font-size:.88rem;transition:color .3s,padding-left .3s}
+.footer-lista a:hover{color:var(--oro-claro);padding-left:.3rem}
+
+.redes{display:flex;gap:.6rem;margin-top:1.2rem}
+.redes a{
+  width:40px;height:40px;border-radius:12px;
+  display:grid;place-items:center;
+  background:rgba(251,245,233,.06);
+  border:1px solid rgba(251,245,233,.12);
+  color:rgba(251,245,233,.7);
+  transition:all .35s cubic-bezier(.2,.8,.2,1);
+}
+.redes a:hover{
+  background:var(--terracota);border-color:var(--terracota);
+  color:#fff;transform:translateY(-4px);
+  box-shadow:0 14px 26px -12px rgba(196,85,43,.9);
+}
+.redes svg{width:17px;height:17px}
+
+.footer-abajo{
+  border-top:1px solid rgba(251,245,233,.09);
+  padding:1.5rem 0;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:1rem;flex-wrap:wrap;
+  font-size:.76rem;color:rgba(251,245,233,.4);
+}
+.footer-abajo .corazon{color:var(--terracota)}
+
+/* ============================================================
+   FLOTANTES
+============================================================ */
+.whatsapp{
+  position:fixed;right:clamp(14px,2.5vw,26px);bottom:clamp(14px,2.5vw,26px);
+  z-index:40;
+  width:58px;height:58px;border-radius:50%;
+  display:grid;place-items:center;
+  background:#25D366;color:#fff;
+  box-shadow:0 16px 34px -12px rgba(37,211,102,.85);
+  transition:transform .4s cubic-bezier(.2,.9,.3,1.3),box-shadow .4s;
+}
+.whatsapp:hover{transform:scale(1.1) rotate(-6deg);box-shadow:0 22px 44px -14px rgba(37,211,102,.95)}
+.whatsapp svg{width:29px;height:29px}
+.whatsapp::after{
+  content:'';position:absolute;inset:0;border-radius:50%;
+  border:2px solid rgba(37,211,102,.6);
+  animation:pulso 2.6s ease-out infinite;
+}
+@keyframes pulso{
+  0%{transform:scale(1);opacity:.85}
+  100%{transform:scale(1.65);opacity:0}
+}
+
+.arriba{
+  position:fixed;right:clamp(14px,2.5vw,26px);
+  bottom:calc(clamp(14px,2.5vw,26px) + 72px);
+  z-index:40;
+  width:46px;height:46px;border-radius:50%;
+  display:grid;place-items:center;
+  background:var(--madera);color:var(--oro-claro);
+  border:none;cursor:pointer;
+  box-shadow:0 14px 28px -14px rgba(0,0,0,.9);
+  opacity:0;visibility:hidden;transform:translateY(14px);
+  transition:all .4s cubic-bezier(.2,.8,.2,1);
+}
+.arriba.visible{opacity:1;visibility:visible;transform:none}
+.arriba:hover{background:var(--terracota);color:#fff}
+.arriba svg{width:18px;height:18px}
+
+.progreso{
+  position:fixed;top:0;left:0;height:3px;z-index:100;
+  background:linear-gradient(90deg,var(--terracota),var(--oro),var(--teal-claro));
+  width:0%;transition:width .1s linear;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .hero-tarjeta{max-width:440px;animation:none}
+  .historia-grid{grid-template-columns:1fr;gap:3rem}
+  .arco{max-width:400px;margin-inline:auto;aspect-ratio:1/1.15}
+  .bar-grid{grid-template-columns:1fr;gap:3rem}
+  .reserva-grid{grid-template-columns:1fr;gap:3rem}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:2.4rem}
+  .enlaces{gap:1.4rem}
+}
+
+@media (max-width:860px){
+  .enlaces,.nav-acciones .btn{display:none}
+  .hamburguesa{display:block}
+  .barra-superior .der{display:none}
+  .barra-superior .contenedor{justify-content:center}
+  .galeria{grid-template-columns:repeat(4,1fr)}
+  .f-a{grid-column:span 4;grid-row:span 2}
+  .f-b,.f-c{grid-column:span 2}
+  .f-d,.f-e,.f-f{grid-column:span 2}
+  .valores{grid-template-columns:1fr;gap:.8rem}
+  .scroll-ind{display:none}
+}
+
+@media (max-width:620px){
+  :root{--nav-h:66px}
+  .campos{grid-template-columns:1fr}
+  .cocteles{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:2rem}
+  .footer-abajo{justify-content:center;text-align:center}
+  .hero-botones .btn{flex:1;min-width:150px}
+  .hero-datos{gap:1.4rem 2rem}
+  .marca-sub{display:none}
+  .platos{gap:0}
+  .galeria{grid-template-columns:repeat(2,1fr)}
+  .f-a,.f-b,.f-c,.f-d,.f-e,.f-f{grid-column:span 2;grid-row:span 1}
+  .f-a{min-height:220px}
+  .tabs{gap:.45rem}
+  .tab{padding:.6rem 1.1rem;font-size:.68rem}
+}
+
+@media (max-width:400px){
+  .barra-superior{font-size:.68rem}
+  .marca-nombre{font-size:1.05rem}
+}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+  .reveal{opacity:1;transform:none}
+}
+
+:focus-visible{outline:2.5px solid var(--terracota);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+
+<body>
+
+<div class="progreso" id="progreso"></div>
+
+<!-- ============ BARRA SUPERIOR ============ -->
+<div class="barra-superior">
+  <div class="contenedor">
+    <span class="item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      Calzada #152, e/ Céspedes y Av. de las Palmas · Cárdenas, Matanzas
+    </span>
+    <span class="der">
+      <span class="item aviso" id="avisoApertura">
+        Gran apertura · Muy pronto
+      </span>
+      <span class="item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        +53 45 52 1234
+      </span>
+    </span>
+  </div>
+</div>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<header class="nav" id="nav">
+  <div class="contenedor">
+    <a href="#inicio" class="marca" aria-label="El Colonial, inicio">
+      <span class="marca-emblema">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M8 2h8l-1.2 4h-5.6L8 2z"/>
+          <path d="M9.2 6 7 21a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1L14.8 6"/>
+          <path d="M7.6 12h8.8"/>
+          <path d="M12 2V0"/>
+        </svg>
+      </span>
+      <span class="marca-texto">
+        <span class="marca-nombre">El Colonial</span>
+        <span class="marca-sub">Bar · Restaurante</span>
+      </span>
+    </a>
+
+    <nav class="enlaces" aria-label="Navegación principal">
+      <a href="#inicio" class="activo">Inicio</a>
+      <a href="#historia">Historia</a>
+      <a href="#carta">Carta</a>
+      <a href="#bar">Bar</a>
+      <a href="#galeria">Galería</a>
+      <a href="#reservar">Contacto</a>
+    </nav>
+
+    <div class="nav-acciones">
+      <a href="#reservar" class="btn">Reservar para apertura</a>
+      <button class="hamburguesa" id="hamburguesa" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuMovil">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MENÚ MÓVIL ============ -->
+<nav class="menu-movil" id="menuMovil" aria-label="Menú móvil">
+  <a href="#inicio"    style="--i:0">Inicio <small>01</small></a>
+  <a href="#historia"  style="--i:1">Historia <small>02</small></a>
+  <a href="#carta"     style="--i:2">Carta <small>03</small></a>
+  <a href="#bar"       style="--i:3">Bar <small>04</small></a>
+  <a href="#galeria"   style="--i:4">Galería <small>05</small></a>
+  <a href="#reservar"  style="--i:5">Contacto <small>06</small></a>
+  <div class="movil-pie">
+    <strong>Muy pronto</strong>
+    <span>Calzada #152, Cárdenas, Matanzas</span>
+    <span>+53 45 52 1234</span>
+    <span>Gran apertura · fecha por anunciar</span>
+  </div>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="inicio">
+  <div class="contenedor hero-grid">
+
+    <div class="hero-contenido">
+      <span class="hero-insignia">
+        <b>Próxima apertura</b> Cárdenas · Matanzas
+        <span class="punto" aria-hidden="true"></span>
+      </span>
+
+      <h1>
+        El
+        <span class="linea-2">Colonial</span>
+      </h1>
+
+      <p class="hero-tipo">Bar · Restaurante</p>
+
+      <p class="hero-texto">
+        Cocina cubana de raíz, ron añejo y son en vivo. Una casona colonial restaurada
+        en la Ciudad de las Primicias que <strong>abre sus puertas estos días</strong>.
+        Sé de los primeros en sentarse a la mesa.
+      </p>
+
+      <div class="hero-botones">
+        <a href="#reservar" class="btn btn-oro">Reservar para la apertura</a>
+        <a href="#carta" class="btn btn-fantasma">Ver la carta</a>
+      </div>
+
+      <div class="hero-datos">
+        <div class="hero-dato"><b id="heroDias">--</b><span>Días para abrir</span></div>
+        <div class="hero-dato"><b>40+</b><span>Platos criollos</span></div>
+        <div class="hero-dato"><b>18</b><span>Cócteles de la casa</span></div>
+      </div>
+    </div>
+
+    <aside class="hero-tarjeta">
+      <h3>Los favoritos de la casa</h3>
+      <p class="mini">Lo que ya se cocina en las pruebas</p>
+      <ul class="hero-lista">
+        <li>
+          <span>Mojito Clásico<span class="nota">Hierbabuena fresca, ron blanco, limón</span></span>
+          <span class="precio">$5</span>
+        </li>
+        <li>
+          <span>Ropa Vieja<span class="nota">8 horas de cocción lenta</span></span>
+          <span class="precio">$12.50</span>
+        </li>
+        <li>
+          <span>Daiquirí<span class="nota">La receta de El Floridita</span></span>
+          <span class="precio">$5.50</span>
+        </li>
+        <li>
+          <span>Lechón Asado<span class="nota">Naranja agria y orégano</span></span>
+          <span class="precio">$14</span>
+        </li>
+      </ul>
+    </aside>
+
+  </div>
+
+  <div class="scroll-ind" aria-hidden="true">
+    <span class="raton"></span>
+    <span>Desliza</span>
+  </div>
+
+  <div class="hero-borde" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C180,80 340,0 540,26 C740,52 900,80 1120,48 C1280,26 1370,44 1440,56 L1440,80 L0,80 Z" fill="#0a2227"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ============ APERTURA / CUENTA REGRESIVA ============ -->
+<section class="apertura" id="apertura">
+  <div class="contenedor contenido">
+    <span class="script claro">Cuenta regresiva</span>
+    <h2 class="titulo claro">Gran <em>apertura</em></h2>
+
+    <div class="cuenta" id="cuenta" aria-live="polite">
+      <div class="cuenta-item">
+        <span class="cuenta-num" id="cdDias">--</span>
+        <span class="cuenta-lab">Días</span>
+      </div>
+      <div class="cuenta-item">
+        <span class="cuenta-num" id="cdHoras">--</span>
+        <span class="cuenta-lab">Horas</span>
+      </div>
+      <div class="cuenta-item">
+        <span class="cuenta-num" id="cdMin">--</span>
+        <span class="cuenta-lab">Minutos</span>
+      </div>
+      <div class="cuenta-item">
+        <span class="cuenta-num" id="cdSeg">--</span>
+        <span class="cuenta-lab">Segundos</span>
+      </div>
+    </div>
+
+    <p class="mensaje-abierto" id="mensajeAbierto">¡Ya estamos abiertos! Te esperamos en la Calzada.</p>
+
+    <p class="aviso-apertura" id="avisoCuenta">
+      Muy pronto en la <strong>Calzada de Cárdenas</strong>. Reserva tu mesa ahora y
+      sé de los primeros en vivir la noche de apertura.
+    </p>
+
+    <a href="#reservar" class="btn btn-oro">Reservar para la apertura</a>
+  </div>
+</section>
+
+<!-- ============ CINTA ============ -->
+<div class="cinta" aria-hidden="true">
+  <div class="cinta-pista">
+    <span class="cinta-item">Ropa Vieja</span>
+    <span class="cinta-item">Mojito</span>
+    <span class="cinta-item">Son Cubano</span>
+    <span class="cinta-item">Ron Añejo</span>
+    <span class="cinta-item">Congrí</span>
+    <span class="cinta-item">Lechón Asado</span>
+    <span class="cinta-item">Café Cubano</span>
+    <span class="cinta-item">Tostones</span>
+    <span class="cinta-item">Ropa Vieja</span>
+    <span class="cinta-item">Mojito</span>
+    <span class="cinta-item">Son Cubano</span>
+    <span class="cinta-item">Ron Añejo</span>
+    <span class="cinta-item">Congrí</span>
+    <span class="cinta-item">Lechón Asado</span>
+    <span class="cinta-item">Café Cubano</span>
+    <span class="cinta-item">Tostones</span>
+  </div>
+</div>
+
+<!-- ============ HISTORIA ============ -->
+<section class="seccion seccion-crema" id="historia">
+  <div class="contenedor historia-grid">
+
+    <div class="reveal">
+      <div class="arco">
+        <div class="arco-ornamento">
+          <svg viewBox="0 0 60 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M30 2v8M30 30v8"/>
+            <path d="M18 12c0 6 5 10 12 10s12-4 12-10"/>
+            <path d="M12 20c0 10 8 16 18 16s18-6 18-16"/>
+            <circle cx="30" cy="24" r="3"/>
+          </svg>
+        </div>
+        <div class="arco-marco"></div>
+        <div class="arco-contenido">
+          <div class="anio">1898</div>
+          <p>Casona colonial · Abrimos pronto</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="historia-texto reveal" style="--d:.15s">
+      <span class="script">El proyecto</span>
+      <h2 class="titulo">Una casona que <em>despierta</em></h2>
+      <div class="divisor" style="justify-content:flex-start">
+        <span style="background:linear-gradient(90deg,var(--oro),transparent)"></span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        <span style="background:linear-gradient(90deg,transparent,var(--oro))"></span>
+      </div>
+
+      <p class="parrafo" style="margin-top:1.4rem">
+        Esta casa de la Calzada de Cárdenas fue levantada a finales del siglo XIX, cuando
+        la <strong>Ciudad de las Primicias</strong> era un hervidero de comerciantes, marinos
+        y soñadores. Durante décadas permaneció cerrada. Ahora, después de una restauración
+        cuidadosa de sus azulejos, su barra de caoba y sus techos de cinco metros,
+        volvemos a abrir sus puertas para devolverle la vida que tuvo.
+      </p>
+      <p class="parrafo">
+        <strong>El Colonial</strong> nace de un sueño sencillo: recuperar la cocina de casa,
+        el ron del bueno y la música en vivo, en el mismo rincón donde generaciones de
+        cardenenses conversaron hasta el amanecer. <strong>Abrimos estos días</strong> — y
+        queremos que seas de los primeros en sentarte a la mesa.
+      </p>
+
+      <div class="historia-cita">
+        <p>«No estamos abriendo un restaurante. Estamos despertando una casa
+        que llevaba demasiado tiempo dormida.»</p>
+        <cite>— La familia Betancourt, fundadores</cite>
+      </div>
+
+      <div class="valores">
+        <div class="valor">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          <h4>Producto local</h4>
+          <p>Compramos en el mercado de Cárdenas, cada mañana.</p>
+        </div>
+        <div class="valor">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+          <h4>Música en vivo</h4>
+          <p>Son, bolero y trova. De martes a domingo, desde las 8 PM.</p>
+        </div>
+        <div class="valor">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          <h4>Trato de casa</h4>
+          <p>Nadie es cliente. Todo el mundo es visita.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ CARTA ============ -->
+<section class="seccion carta" id="carta">
+  <div class="contenedor">
+
+    <div class="cabecera centrada reveal">
+      <span class="script claro">La carta</span>
+      <h2 class="titulo claro">Sabor de <em>casa</em>, cocina de raíz</h2>
+      <div class="divisor">
+        <span></span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        <span></span>
+      </div>
+
+      <div class="aviso-carta" style="margin-top:1.4rem">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        Carta de apertura · sujeta a ajustes
+      </div>
+
+      <p class="parrafo claro">
+        Todo se cocina al momento, con lo que da la tierra y el mar. Si algo se acabó,
+        es porque estaba bueno.
+      </p>
+    </div>
+
+    <div class="tabs reveal" role="tablist">
+      <button class="tab activo" data-cat="entradas" role="tab" aria-selected="true">Para picar</button>
+      <button class="tab" data-cat="principales" role="tab" aria-selected="false">Principales</button>
+      <button class="tab" data-cat="postres" role="tab" aria-selected="false">Postres</button>
+      <button class="tab" data-cat="bar" role="tab" aria-selected="false">Del bar</button>
+    </div>
+
+    <div class="platos" id="platos">
+
+      <article class="plato" data-cat="entradas">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Croquetas de jamón</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$4.50</span>
+        </div>
+        <p class="plato-desc">Seis unidades. Crujientes por fuera, cremosas por dentro, con alioli de ajo asado.</p>
+      </article>
+
+      <article class="plato" data-cat="entradas">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Tostones con mojo<span class="plato-fav">Clásico</span></h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$3.80</span>
+        </div>
+        <p class="plato-desc">Plátano verde frito dos veces, mojo criollo de ajo, naranja agria y cilantro.</p>
+      </article>
+
+      <article class="plato" data-cat="entradas">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Tamal en cazuela</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$5.20</span>
+        </div>
+        <p class="plato-desc">Maíz tierno molido, carne de cerdo y sofrito criollo. Se sirve bien caliente.</p>
+      </article>
+
+      <article class="plato" data-cat="entradas">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Yuca con mojo</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$3.50</span>
+        </div>
+        <p class="plato-desc">Yuca tierna bañada en mojo de ajo y cebolla. Sencillo y perfecto.</p>
+      </article>
+
+      <article class="plato" data-cat="entradas">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Empanadas de picadillo</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$4.20</span>
+        </div>
+        <p class="plato-desc">Tres unidades. Masa fina, relleno de picadillo a la habanera con pasas y aceituna.</p>
+      </article>
+
+      <article class="plato" data-cat="entradas">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Ceviche de la bahía</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$7.00</span>
+        </div>
+        <p class="plato-desc">Pescado del día, limón, ají cachucha, cebolla roja y boniato asado.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Ropa Vieja<span class="plato-fav">La joya</span></h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$12.50</span>
+        </div>
+        <p class="plato-desc">Ocho horas de cocción lenta. Se deshace sola. Con congrí y plátano maduro frito.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Lechón asado</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$14.00</span>
+        </div>
+        <p class="plato-desc">Doce horas de horno, marinado en naranja agria, orégano y ajo. Piel crujiente garantizada.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Ajiaco criollo</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$11.00</span>
+        </div>
+        <p class="plato-desc">El guiso nacional: viandas, maíz, carne y caldo espeso. Se sirve con casabe.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Congrí con pollo asado</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$10.50</span>
+        </div>
+        <p class="plato-desc">Arroz y frijoles negros cocidos juntos, con cuarto de pollo al horno y ensalada de aguacate.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Arroz con pollo a la chorrera</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$11.50</span>
+        </div>
+        <p class="plato-desc">Arroz caldoso con azafrán, pollo desmenuzado, pimiento y cerveza. El plato de los domingos.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Pescado a la plancha con coco</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$13.50</span>
+        </div>
+        <p class="plato-desc">Filete del día, leche de coco, jengibre y limón. Con arroz blanco y vegetales salteados.</p>
+      </article>
+
+      <article class="plato" data-cat="principales">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Picadillo a la habanera</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$9.80</span>
+        </div>
+        <p class="plato-desc">Carne molida con sofrito, pasas, aceitunas y papas. Con arroz blanco y huevo frito.</p>
+      </article>
+
+      <article class="plato" data-cat="postres">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Flan de coco<span class="plato-fav">Favorito</span></h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$4.00</span>
+        </div>
+        <p class="plato-desc">Cremoso, con caramelo oscuro y coco rallado fresco por encima.</p>
+      </article>
+
+      <article class="plato" data-cat="postres">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Arroz con leche</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$3.50</span>
+        </div>
+        <p class="plato-desc">Con canela, cáscara de limón y un toque de nuez moscada. Receta de la abuela Elvira.</p>
+      </article>
+
+      <article class="plato" data-cat="postres">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Torticas de Morón</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$3.20</span>
+        </div>
+        <p class="plato-desc">Tres unidades. Galletas de maíz y coco, crujientes, con azúcar por encima.</p>
+      </article>
+
+      <article class="plato" data-cat="postres">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Helado de mamey</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$4.50</span>
+        </div>
+        <p class="plato-desc">Hecho en casa, con fruta de temporada. Dulce, denso y anaranjado como un atardecer.</p>
+      </article>
+
+      <article class="plato" data-cat="bar">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Mojito Clásico<span class="plato-fav">Insignia</span></h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$5.00</span>
+        </div>
+        <p class="plato-desc">Ron blanco, hierbabuena machacada al momento, limón, azúcar de caña y soda.</p>
+      </article>
+
+      <article class="plato" data-cat="bar">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Daiquirí</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$5.50</span>
+        </div>
+        <p class="plato-desc">La receta de siempre: ron, limón y azúcar. Bien frío, sin adornos innecesarios.</p>
+      </article>
+
+      <article class="plato" data-cat="bar">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Cuba Libre</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$4.50</span>
+        </div>
+        <p class="plato-desc">Ron añejo, cola bien fría y un gajo de limón. El trago de las tardes largas.</p>
+      </article>
+
+      <article class="plato" data-cat="bar">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Canchánchara</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$5.00</span>
+        </div>
+        <p class="plato-desc">Aguardiente, miel de abeja, limón y agua. Se sirve en vaso de barro, como manda Trinidad.</p>
+      </article>
+
+      <article class="plato" data-cat="bar">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Piña Colada</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$6.00</span>
+        </div>
+        <p class="plato-desc">Ron, piña fresca y crema de coco. Se sirve en la misma piña, si hay.</p>
+      </article>
+
+      <article class="plato" data-cat="bar">
+        <div class="plato-cab">
+          <h3 class="plato-nombre">Café Cubano / Cortadito</h3>
+          <span class="plato-puntos"></span>
+          <span class="plato-precio">$2.00</span>
+        </div>
+        <p class="plato-desc">Colado a la greca, fuerte y dulce. El cierre obligatorio de toda comida.</p>
+      </article>
+
+    </div>
+
+    <div class="carta-pie reveal">
+      <p>Precios en USD. Aceptamos efectivo y tarjetas internacionales · Servicio de mesa incluido</p>
+      <a href="#reservar" class="btn btn-oro">Reservar para la apertura</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ BAR ============ -->
+<section class="seccion seccion-arena" id="bar">
+  <div class="contenedor bar-grid">
+
+    <div class="bar-texto reveal">
+      <span class="script">La barra</span>
+      <h2 class="titulo">Ron añejo y <em>manos</em> que saben</h2>
+      <div class="divisor" style="justify-content:flex-start">
+        <span style="background:linear-gradient(90deg,var(--oro),transparent)"></span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        <span style="background:linear-gradient(90deg,transparent,var(--oro))"></span>
+      </div>
+
+      <p class="parrafo" style="margin-top:1.4rem">
+        La barra de caoba de esta casa fue restaurada pieza por pieza, respetando el
+        trabajo original. Detrás, estamos montando más de cuarenta botellas de ron cubano
+        — desde blancos ligeros hasta añejos de veinte años que solo se abrirán en
+        ocasiones especiales.
+      </p>
+      <p class="parrafo">
+        El bartender de turno preparará los clásicos como se han preparado siempre:
+        con hielo picado a mano, hierbabuena del patio y sin atajos.
+      </p>
+
+      <div class="bar-nota">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+        <p><strong>Happy hour:</strong> de lunes a viernes, de 4 a 7 PM, todos los cócteles de la casa a mitad de precio. Música en vivo desde las 8 PM.</p>
+      </div>
+    </div>
+
+    <div class="cocteles reveal" style="--d:.15s">
+
+      <article class="coctel">
+        <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 3h12l-2 18H8L6 3z"/><path d="M5 8h14"/><path d="M9 12c1-2 4-2 5 0"/>
+        </svg>
+        <h4>Mojito</h4>
+        <p>Hierbabuena fresca del patio</p>
+        <span class="p">$5</span>
+      </article>
+
+      <article class="coctel">
+        <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 4h14l-7 9v6"/><path d="M8 20h8"/><path d="M3 8h4M17 8h4"/>
+        </svg>
+        <h4>Daiquirí</h4>
+        <p>Fresco, seco, perfecto</p>
+        <span class="p">$5.50</span>
+      </article>
+
+      <article class="coctel">
+        <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="6" y="3" width="12" height="18" rx="2"/><path d="M6 9h12"/>
+        </svg>
+        <h4>Cuba Libre</h4>
+        <p>El trago de las tardes</p>
+        <span class="p">$4.50</span>
+      </article>
+
+      <article class="coctel">
+        <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M7 4h10l-1 16H8L7 4z"/><path d="M9 10h6"/>
+        </svg>
+        <h4>Canchánchara</h4>
+        <p>En vaso de barro, como manda</p>
+        <span class="p">$5</span>
+      </article>
+
+      <article class="coctel">
+        <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h16l-8 12L4 8z"/><path d="M8 8c0-3 2-5 4-5s4 2 4 5"/>
+        </svg>
+        <h4>Piña Colada</h4>
+        <p>Cremosa, tropical, helada</p>
+        <span class="p">$6</span>
+      </article>
+
+      <article class="coctel">
+        <svg class="icono" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8h12v6a6 6 0 0 1-12 0V8z"/><path d="M16 9h2a3 3 0 0 1 0 6h-2"/><path d="M7 4v1M11 3v2"/>
+        </svg>
+        <h4>Café Cubano</h4>
+        <p>Fuerte, dulce, colado a la greca</p>
+        <span class="p">$2</span>
+      </article>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ GALERÍA ============ -->
+<section class="seccion seccion-crema" id="galeria">
+  <div class="contenedor">
+
+    <div class="cabecera centrada reveal">
+      <span class="script">El ambiente</span>
+      <h2 class="titulo">Rincones de la <em>casa</em></h2>
+      <div class="divisor">
+        <span></span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        <span></span>
+      </div>
+      <p class="parrafo" style="margin-top:1.3rem">
+        Techos de cinco metros, azulejos centenarios, patios con palmas y una casona
+        de más de un siglo que vuelve a abrir sus puertas.
+      </p>
+    </div>
+
+    <div class="galeria">
+      <figure class="foto bg-salon f-a reveal">
+        <figcaption class="foto-cap">
+          <span class="sub">Planta baja</span>
+          <h4>El salón principal</h4>
+          <p>Mesas de mármol, ventiladores de aspas y luz que entra por los vitrales.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="foto bg-barra f-b reveal" style="--d:.08s">
+        <figcaption class="foto-cap">
+          <span class="sub">Caoba restaurada</span>
+          <h4>Nuestra barra</h4>
+          <p>Más de cuarenta botellas de ron cubano.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="foto bg-terraza f-c reveal" style="--d:.16s">
+        <figcaption class="foto-cap">
+          <span class="sub">Azotea</span>
+          <h4>Terraza al atardecer</h4>
+          <p>Vistas a los tejados de Cárdenas y a la bahía.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="foto bg-cocina f-d reveal" style="--d:.24s">
+        <figcaption class="foto-cap">
+          <span class="sub">A la vista</span>
+          <h4>La cocina</h4>
+          <p>Fogones de hierro y sofrito a las 7 AM.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="foto bg-musica f-e reveal" style="--d:.32s">
+        <figcaption class="foto-cap">
+          <span class="sub">Cada noche</span>
+          <h4>Música en vivo</h4>
+          <p>Son, bolero y trova en el patio.</p>
+        </figcaption>
+      </figure>
+
+      <figure class="foto bg-ron f-f reveal" style="--d:.4s">
+        <figcaption class="foto-cap">
+          <span class="sub">Reservado</span>
+          <h4>El rincón del ron</h4>
+          <p>Añejos que solo se abren en ocasiones.</p>
+        </figcaption>
+      </figure>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============ TESTIMONIOS ============ -->
+<section class="seccion seccion-arena">
+  <div class="contenedor">
+
+    <div class="cabecera centrada reveal">
+      <span class="script">Antes de abrir</span>
+      <h2 class="titulo">Primeras <em>impresiones</em></h2>
+      <div class="divisor">
+        <span></span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        <span></span>
+      </div>
+      <p class="parrafo" style="margin-top:1.3rem">
+        En las cenas de prueba y las noches de familia ya se escuchan las primeras voces.
+        Esto dicen quienes han probado antes que nadie.
+      </p>
+    </div>
+
+    <div class="testimonios">
+
+      <article class="testimonio reveal">
+        <div class="estrellas" aria-label="5 de 5 estrellas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        </div>
+        <blockquote>
+          «Probamos la ropa vieja en una de las cenas de prueba. Se deshace con el
+          tenedor. Ya quiero que abran para volver con toda la familia.»
+        </blockquote>
+        <div class="testimonio-autor">
+          <span class="avatar" style="background:linear-gradient(145deg,#C4552B,#9B3D1B)">MR</span>
+          <div>
+            <b>Marta Ruiz</b>
+            <span>Vecina del barrio</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonio reveal" style="--d:.12s">
+        <div class="estrellas" aria-label="5 de 5 estrellas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        </div>
+        <blockquote>
+          «El mojito que prepararon en la prueba de barra es el más honesto que he
+          probado en Matanzas. Y el trío que ensayó en el patio... para quedarse.»
+        </blockquote>
+        <div class="testimonio-autor">
+          <span class="avatar" style="background:linear-gradient(145deg,#0E5A61,#17848F)">JL</span>
+          <div>
+            <b>Julián León</b>
+            <span>Amigo de la casa</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonio reveal" style="--d:.24s">
+        <div class="estrellas" aria-label="5 de 5 estrellas">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        </div>
+        <blockquote>
+          «El flan de coco... nos quedamos sin palabras. Este lugar va a dar mucho
+          que hablar en Cárdenas.»
+        </blockquote>
+        <div class="testimonio-autor">
+          <span class="avatar" style="background:linear-gradient(145deg,#C99A3F,#9B7A24)">FB</span>
+          <div>
+            <b>Familia Betancourt</b>
+            <span>Los fundadores</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ RESERVA / CONTACTO ============ -->
+<section class="seccion reserva" id="reservar">
+  <div class="contenedor reserva-grid">
+
+    <div class="reveal">
+      <span class="script claro">Reserva</span>
+      <h2 class="titulo claro">Sé de los <em>primeros</em></h2>
+      <div class="divisor" style="justify-content:flex-start">
+        <span style="background:linear-gradient(90deg,var(--oro),transparent)"></span>
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.2H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 20.8 8 13.6 2 9.2h7.6z"/></svg>
+        <span style="background:linear-gradient(90deg,transparent,var(--oro))"></span>
+      </div>
+
+      <p class="parrafo claro" style="margin-top:1.4rem">
+        Estamos preparando todo para la gran apertura. <strong>Déjanos tus datos</strong>
+        y te avisaremos en cuanto tengamos la fecha confirmada — además, serás de los
+        primeros en reservar. Para eventos privados o grupos grandes, escríbenos
+        directamente por WhatsApp.
+      </p>
+
+      <div class="datos-contacto">
+
+        <div class="dato">
+          <span class="dato-icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <div>
+            <h4>Dirección</h4>
+            <p>Calzada #152, e/ Céspedes y Av. de las Palmas<br>Cárdenas, Matanzas, Cuba</p>
+          </div>
+        </div>
+
+        <div class="dato">
+          <span class="dato-icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </span>
+          <div>
+            <h4>Teléfono / WhatsApp</h4>
+            <a href="tel:+5345521234">+53 45 52 1234</a><br>
+            <a href="https://wa.me/5355551234" target="_blank" rel="noopener">+53 5 555 1234</a>
+          </div>
+        </div>
+
+        <div class="dato">
+          <span class="dato-icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          </span>
+          <div>
+            <h4>Horario (desde la apertura)</h4>
+            <p>Lunes a jueves · 12:00 PM – 12:00 AM<br>
+               Viernes y sábado · 12:00 PM – 2:00 AM<br>
+               Domingo · 12:00 PM – 10:00 PM</p>
+          </div>
+        </div>
+
+        <div class="dato">
+          <span class="dato-icono">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>
+          </span>
+          <div>
+            <h4>Correo</h4>
+            <a href="mailto:reservas@elcolonial.cu">reservas@elcolonial.cu</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form-caja reveal" style="--d:.15s">
+      <h3>Quiero ser de los primeros</h3>
+      <p class="sub">Te avisamos por WhatsApp en cuanto abramos.</p>
+
+      <form id="formReserva" novalidate>
+        <div class="campos">
+
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="María González" required>
+            <span class="aviso">Escribe tu nombre</span>
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono o email</label>
+            <input type="text" id="telefono" name="telefono" placeholder="+53 5 555 1234" required>
+            <span class="aviso">Necesitamos un contacto</span>
+          </div>
+
+          <div class="campo">
+            <label for="fecha">Fecha tentativa</label>
+            <input type="date" id="fecha" name="fecha">
+            <span class="aviso">Elige una fecha</span>
+          </div>
+
+          <div class="campo">
+            <label for="hora">Hora preferida</label>
+            <select id="hora" name="hora">
+              <option value="">Sin preferencia</option>
+              <option>12:00 PM</option>
+              <option>12:30 PM</option>
+              <option>1:00 PM</option>
+              <option>1:30 PM</option>
+              <option>2:00 PM</option>
+              <option>6:00 PM</option>
+              <option>6:30 PM</option>
+              <option>7:00 PM</option>
+              <option>7:30 PM</option>
+              <option>8:00 PM</option>
+              <option>8:30 PM</option>
+              <option>9:00 PM</option>
+              <option>9:30 PM</option>
+              <option>10:00 PM</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="personas">Nº de personas</label>
+            <select id="personas" name="personas" required>
+              <option value="">Selecciona…</option>
+              <option>1 persona</option>
+              <option>2 personas</option>
+              <option>3 personas</option>
+              <option>4 personas</option>
+              <option>5 personas</option>
+              <option>6 personas</option>
+              <option>7–10 personas</option>
+              <option>Más de 10</option>
+            </select>
+            <span class="aviso">Indica cuántos son</span>
+          </div>
+
+          <div class="campo">
+            <label for="zona">Zona preferida</label>
+            <select id="zona" name="zona">
+              <option>Sin preferencia</option>
+              <option>Salón principal</option>
+              <option>Junto a la barra</option>
+              <option>Terraza (azotea)</option>
+              <option>Patio — música en vivo</option>
+            </select>
+          </div>
+
+          <div class="campo ancho">
+            <label for="mensaje">Notas especiales (opcional)</label>
+            <textarea id="mensaje" name="mensaje" placeholder="Alergias, celebración, silla para bebé, etc."></textarea>
+          </div>
+
+        </div>
+
+        <button type="submit" class="btn">Avísame cuando abran</button>
+        <p class="form-pie">Al enviar aceptas que te contactemos para confirmar tu reserva de apertura.</p>
+      </form>
+
+      <div class="exito" id="exito" role="status" aria-live="polite">
+        <div class="check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+        </div>
+        <h3>¡Anotado!</h3>
+        <p>Gracias, <strong id="nombreExito">amigo</strong>. Te avisaremos por WhatsApp en cuanto confirmemos la fecha de apertura. ¡Nos vemos en la Calzada #152, Cárdenas!</p>
+        <button type="button" class="btn btn-linea" id="otraReserva">Anotar a otra persona</button>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="contenedor">
+    <div class="footer-grid">
+
+      <div>
+        <div class="footer-marca">
+          <span class="marca-emblema">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 2h8l-1.2 4h-5.6L8 2z"/>
+              <path d="M9.2 6 7 21a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1L14.8 6"/>
+              <path d="M7.6 12h8.8"/>
+              <path d="M12 2V0"/>
+            </svg>
+          </span>
+          <span class="marca-texto">
+            <span class="marca-nombre">El Colonial</span>
+            <span class="marca-sub">Bar · Restaurante</span>
+          </span>
+        </div>
+        <p class="footer-texto">
+          Cocina cubana de raíz en el corazón de Cárdenas, Matanzas. Ron, son y sazón
+          en una casona colonial restaurada. Muy pronto, en la Calzada de siempre.
+        </p>
+        <div class="redes">
+          <a href="#" aria-label="Facebook" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" aria-label="Instagram" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></svg>
+          </a>
+          <a href="#" aria-label="TripAdvisor" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.5" cy="13" r="4.5"/><circle cx="16.5" cy="13" r="4.5"/><path d="M2 6h20L12 15 2 6z"/></svg>
+          </a>
+          <a href="https://wa.me/5355551234" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.7 7.4L3 21l2.1-5.3A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 9.5c0 3 2.5 5.5 5.5 5.5"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Explorar</h4>
+        <ul class="footer-lista">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#historia">Nuestro proyecto</a></li>
+          <li><a href="#carta">La carta</a></li>
+          <li><a href="#bar">El bar</a></li>
+          <li><a href="#galeria">Galería</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Información</h4>
+        <ul class="footer-lista">
+          <li><a href="#reservar">Reservas de apertura</a></li>
+          <li><a href="#reservar">Eventos privados</a></li>
+          <li><a href="#">Música en vivo</a></li>
+          <li><a href="#">Preguntas frecuentes</a></li>
+          <li><a href="#">Trabaja con nosotros</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Visítanos</h4>
+        <ul class="footer-lista">
+          <li>Calzada #152</li>
+          <li>e/ Céspedes y Av. de las Palmas</li>
+          <li>Cárdenas, Matanzas, Cuba</li>
+          <li style="margin-top:.5rem"><a href="tel:+5345521234">+53 45 52 1234</a></li>
+          <li><a href="mailto:reservas@elcolonial.cu">reservas@elcolonial.cu</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-abajo">
+      <span>© <span id="anio"></span> Bar Restaurante El Colonial · Cárdenas, Matanzas, Cuba</span>
+      <span>Hecho con <span class="corazon">♥</span> y mucho café cubano</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5355551234?text=Hola%2C%20quiero%20ser%20de%20los%20primeros%20en%20El%20Colonial%20C%C3%A1rdenas"
+   class="whatsapp" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/>
+  </svg>
+</a>
+
+<button class="arriba" id="arriba" aria-label="Volver arriba">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+/* ============================================================
+   ⚙️ CONFIGURACIÓN — ¡CAMBIA AQUÍ LA FECHA DE APERTURA!
+   Formato: 'AAAA-MM-DDTHH:MM:SS'
+   Ejemplo: '2026-11-15T19:00:00' (15 nov 2026, 7 PM)
+============================================================ */
+const FECHA_APERTURA = new Date('2026-12-15T19:00:00');
+
+/* ============================================================
+   1. AÑO DINÁMICO
+============================================================ */
+document.getElementById('anio').textContent = new Date().getFullYear();
+
+/* ============================================================
+   2. NAV: compacto al hacer scroll + barra de progreso
+============================================================ */
+const nav = document.getElementById('nav');
+const progreso = document.getElementById('progreso');
+const btnArriba = document.getElementById('arriba');
+
+function alScroll(){
+  const y = window.scrollY;
+  nav.classList.toggle('compacto', y > 40);
+  btnArriba.classList.toggle('visible', y > 600);
+
+  const alto = document.documentElement.scrollHeight - window.innerHeight;
+  progreso.style.width = alto > 0 ? (y / alto) * 100 + '%' : '0%';
+}
+window.addEventListener('scroll', alScroll, {passive:true});
+alScroll();
+
+btnArriba.addEventListener('click', () => {
+  window.scrollTo({top:0, behavior:'smooth'});
+});
+
+/* ============================================================
+   3. MENÚ MÓVIL
+============================================================ */
+const hamburguesa = document.getElementById('hamburguesa');
+const menuMovil = document.getElementById('menuMovil');
+
+function alternarMenu(abrir){
+  const estaAbierto = abrir ?? !menuMovil.classList.contains('abierto');
+  menuMovil.classList.toggle('abierto', estaAbierto);
+  hamburguesa.classList.toggle('abierto', estaAbierto);
+  hamburguesa.setAttribute('aria-expanded', estaAbierto);
+  hamburguesa.setAttribute('aria-label', estaAbierto ? 'Cerrar menú' : 'Abrir menú');
+  document.body.style.overflow = estaAbierto ? 'hidden' : '';
+}
+
+hamburguesa.addEventListener('click', () => alternarMenu());
+menuMovil.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => alternarMenu(false));
+});
+document.addEventListener('keydown', e => {
+  if(e.key === 'Escape') alternarMenu(false);
+});
+
+/* ============================================================
+   4. REVEAL AL SCROLL
+============================================================ */
+const observador = new IntersectionObserver((entradas) => {
+  entradas.forEach(entrada => {
+    if(entrada.isIntersecting){
+      entrada.target.classList.add('visible');
+      observador.unobserve(entrada.target);
+    }
+  });
+}, {threshold:0.12, rootMargin:'0px 0px -60px 0px'});
+
+document.querySelectorAll('.reveal').forEach(el => observador.observe(el));
+
+/* ============================================================
+   5. ENLACE ACTIVO EN LA NAVEGACIÓN
+============================================================ */
+const secciones = document.querySelectorAll('main section[id]');
+const enlacesNav = document.querySelectorAll('.enlaces a');
+
+const obsSeccion = new IntersectionObserver((entradas) => {
+  entradas.forEach(entrada => {
+    if(entrada.isIntersecting){
+      const id = entrada.target.id;
+      enlacesNav.forEach(a => {
+        a.classList.toggle('activo', a.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+}, {threshold:0.3, rootMargin:'-20% 0px -55% 0px'});
+
+secciones.forEach(s => obsSeccion.observe(s));
+
+/* ============================================================
+   6. FILTRO DE LA CARTA
+============================================================ */
+const tabs = document.querySelectorAll('.tab');
+const platos = document.querySelectorAll('.plato');
+
+tabs.forEach(tab => {
+  tab.addEventListener('click', () => {
+    tabs.forEach(t => {
+      t.classList.remove('activo');
+      t.setAttribute('aria-selected','false');
+    });
+    tab.classList.add('activo');
+    tab.setAttribute('aria-selected','true');
+
+    const cat = tab.dataset.cat;
+    let indice = 0;
+
+    platos.forEach(plato => {
+      const coincide = plato.dataset.cat === cat;
+      plato.classList.remove('entrando');
+
+      if(coincide){
+        plato.classList.remove('oculto');
+        plato.style.animationDelay = (indice * 55) + 'ms';
+        void plato.offsetWidth;
+        plato.classList.add('entrando');
+        indice++;
+      } else {
+        plato.classList.add('oculto');
+      }
+    });
+  });
+});
+
+document.querySelector('.tab.activo')?.click();
+
+/* ============================================================
+   7. CUENTA REGRESIVA A LA APERTURA
+============================================================ */
+const seccionApertura = document.querySelector('.apertura');
+const elDias = document.getElementById('cdDias');
+const elHoras = document.getElementById('cdHoras');
+const elMin = document.getElementById('cdMin');
+const elSeg = document.getElementById('cdSeg');
+const heroDias = document.getElementById('heroDias');
+const avisoCuenta = document.getElementById('avisoCuenta');
+const avisoApertura = document.getElementById('avisoApertura');
+
+function dosDigitos(n){ return String(n).padStart(2,'0'); }
+
+function actualizarCuenta(){
+  const ahora = new Date();
+  const diff = FECHA_APERTURA - ahora;
+
+  if(diff <= 0){
+    // Ya abrimos
+    seccionApertura?.classList.add('abierta');
+    if(heroDias) heroDias.textContent = '¡Ya!';
+    if(avisoApertura) avisoApertura.textContent = '¡Ya estamos abiertos!';
+    return;
+  }
+
+  const dias  = Math.floor(diff / (1000*60*60*24));
+  const horas = Math.floor(diff / (1000*60*60)) % 24;
+  const min   = Math.floor(diff / (1000*60)) % 60;
+  const seg   = Math.floor(diff / 1000) % 60;
+
+  if(elDias)  elDias.textContent  = dias;
+  if(elHoras) elHoras.textContent = dosDigitos(horas);
+  if(elMin)   elMin.textContent   = dosDigitos(min);
+  if(elSeg)   elSeg.textContent   = dosDigitos(seg);
+  if(heroDias) heroDias.textContent = dias;
+
+  // Aviso superior
+  if(avisoApertura){
+    if(dias > 30){
+      avisoApertura.textContent = 'Gran apertura · Muy pronto';
+    } else if(dias > 1){
+      avisoApertura.textContent = 'Abrimos en ' + dias + ' días';
+    } else if(dias === 1){
+      avisoApertura.textContent = 'Abrimos mañana';
+    } else {
+      avisoApertura.textContent = '¡Abrimos hoy!';
+    }
+  }
+
+  // Aviso en la sección de cuenta
+  if(avisoCuenta){
+    if(dias > 1){
+      avisoCuenta.innerHTML = 'Muy pronto en la <strong>Calzada de Cárdenas</strong>. ' +
+        'Reserva tu mesa ahora y sé de los primeros en vivir la noche de apertura.';
+    } else if(dias === 1){
+      avisoCuenta.innerHTML = '<strong>¡Abrimos mañana!</strong> Últimos lugares disponibles ' +
+        'para la noche de apertura.';
+    } else {
+      avisoCuenta.innerHTML = '<strong>¡Hoy es el día!</strong> Te esperamos en la Calzada #152.';
+    }
+  }
+}
+
+actualizarCuenta();
+setInterval(actualizarCuenta, 1000);
+
+/* ============================================================
+   8. FORMULARIO DE RESERVA
+============================================================ */
+const form = document.getElementById('formReserva');
+const exito = document.getElementById('exito');
+const nombreExito = document.getElementById('nombreExito');
+
+/* Fecha mínima = hoy */
+const campoFecha = document.getElementById('fecha');
+const hoy = new Date().toISOString().split('T')[0];
+campoFecha.min = hoy;
+
+form.querySelectorAll('input, select, textarea').forEach(campo => {
+  campo.addEventListener('input', () => {
+    campo.closest('.campo')?.classList.remove('error');
+  });
+  campo.addEventListener('change', () => {
+    campo.closest('.campo')?.classList.remove('error');
+  });
+});
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  let valido = true;
+  // Solo nombre, teléfono y personas son obligatorios en pre-apertura
+  const obligatorios = ['nombre','telefono','personas'];
+
+  obligatorios.forEach(id => {
+    const campo = document.getElementById(id);
+    const caja = campo.closest('.campo');
+    const vacio = !campo.value.trim();
+
+    if(vacio){
+      caja.classList.add('error');
+      valido = false;
+    } else {
+      caja.classList.remove('error');
+    }
+  });
+
+  if(!valido){
+    const primerError = form.querySelector('.campo.error');
+    primerError?.scrollIntoView({behavior:'smooth', block:'center'});
+    primerError?.querySelector('input, select')?.focus();
+    return;
+  }
+
+  const boton = form.querySelector('button[type="submit"]');
+  const textoOriginal = boton.innerHTML;
+  boton.innerHTML = 'Enviando…';
+  boton.disabled = true;
+
+  setTimeout(() => {
+    const nombre = document.getElementById('nombre').value.trim().split(' ')[0];
+    nombreExito.textContent = nombre || 'amigo';
+    exito.classList.add('visible');
+    boton.innerHTML = textoOriginal;
+    boton.disabled = false;
+  }, 900);
+});
+
+document.getElementById('otraReserva').addEventListener('click', () => {
+  form.reset();
+  exito.classList.remove('visible');
+  document.getElementById('nombre').focus();
+});
+
+/* ============================================================
+   9. SCROLL SUAVE PARA ENLACES INTERNOS
+============================================================ */
+document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+  enlace.addEventListener('click', (e) => {
+    const destino = document.querySelector(enlace.getAttribute('href'));
+    if(!destino) return;
+    e.preventDefault();
+    const offset = nav.offsetHeight + 12;
+    const top = destino.getBoundingClientRect().top + window.scrollY - offset;
+    window.scrollTo({top, behavior:'smooth'});
+  });
+});
+</script>
+
+</body>
+</html>
